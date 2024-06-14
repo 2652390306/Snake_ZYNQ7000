@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../gluttonous_snake.srcs/sources_1/new/food.v" \
+"../../../../gluttonous_snake.srcs/sim_1/new/tb_food.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

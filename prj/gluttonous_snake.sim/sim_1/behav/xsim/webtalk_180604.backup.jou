@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 11 12:25:52 2023
+# Process ID: 180604
+# Current directory: E:/FPGA/Project/handwritten_digit_recognition/handwritten-digits-recognition-hls-main-bilibili/sparkroad_project-master/Snake_ZYNQ7000_My/prj/gluttonous_snake.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/FPGA/Project/handwritten_digit_recognition/handwritten-digits-recognition-hls-main-bilibili/sparkroad_project-master/Snake_ZYNQ7000_My/prj/gluttonous_snake.sim/sim_1/behav/xsim/xsim.dir/tb_food_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/FPGA/Project/handwritten_digit_recognition/handwritten-digits-recognition-hls-main-bilibili/sparkroad_project-master/Snake_ZYNQ7000_My/prj/gluttonous_snake.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/FPGA/Project/handwritten_digit_recognition/handwritten-digits-recognition-hls-main-bilibili/sparkroad_project-master/Snake_ZYNQ7000_My/prj/gluttonous_snake.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/FPGA/Project/handwritten_digit_recognition/handwritten-digits-recognition-hls-main-bilibili/sparkroad_project-master/Snake_ZYNQ7000_My/prj/gluttonous_snake.sim/sim_1/behav/xsim/xsim.dir/tb_food_behav/webtalk/xsim_webtalk.tcl -notrace

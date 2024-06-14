@@ -1,0 +1,467 @@
+
+*** Running vivado
+    with args -log lcd_rgb_char.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lcd_rgb_char.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source lcd_rgb_char.tcl -notrace
+Command: synth_design -top lcd_rgb_char -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9672
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1138.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lcd_rgb_char' [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_rgb_char.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rd_id' [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/rd_id.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rd_id' (1#1) [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/rd_id.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/clk_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (2#1) [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/clk_div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lcd_display' [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:23]
+	Parameter H_DISP bound to: 11'b01100100000 
+	Parameter V_DISP bound to: 11'b00111100000 
+	Parameter SIDE_W bound to: 11'b00000100000 
+	Parameter BLOCK_W bound to: 11'b00000010000 
+	Parameter BLUE bound to: 24'b000000000000000011111111 
+	Parameter WHITE bound to: 24'b111111111111111111111111 
+	Parameter SNAKE bound to: 24'b100110011101100111101010 
+	Parameter FOOD bound to: 24'b111010110011001100100100 
+	Parameter BLACK bound to: 24'b000000000000000000000000 
+	Parameter HEAD bound to: 24'b001101110111110100100010 
+	Parameter START_DIRECT bound to: 8'b00000000 
+	Parameter UP_DIRECT bound to: 8'b00000001 
+	Parameter DOWN_DIRECT bound to: 8'b00000010 
+	Parameter LEFT_DIRECT bound to: 8'b00000100 
+	Parameter RIGHT_DIRECT bound to: 8'b00001000 
+	Parameter HITWALL bound to: 8'b00010000 
+	Parameter HITBODY bound to: 8'b00100000 
+	Parameter MAX_cubex bound to: 11'b00000110000 
+	Parameter MAX_cubey bound to: 11'b00000011100 
+	Parameter SNAKE_LEN_INI bound to: 8'b00000011 
+	Parameter SNAKE_LEN_MAX bound to: 8'b00010101 
+WARNING: [Synth 8-324] index 21 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 21 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 21 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 22 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 22 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 22 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 23 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 23 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 23 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 24 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 24 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 24 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 25 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 25 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 25 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 26 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 26 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 26 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 27 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 27 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 27 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 28 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 28 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 28 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 29 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 29 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 29 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 30 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 30 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 30 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 31 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 31 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 31 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 32 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 32 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 32 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 33 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 33 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 33 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 34 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 34 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 34 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 35 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 35 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 35 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 36 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 36 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 36 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 37 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 37 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 37 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 38 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 38 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 38 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 39 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 39 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 39 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 40 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 40 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 40 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 41 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 41 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 41 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 42 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 42 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 42 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 43 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 43 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 43 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 44 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 44 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 44 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 45 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 45 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 45 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 46 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 46 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 46 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 47 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 47 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 47 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 48 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 48 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 48 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 49 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 49 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 49 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 50 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 50 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 50 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 51 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 51 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 51 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 52 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 52 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 52 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 53 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 53 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 53 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+WARNING: [Synth 8-324] index 54 out of range [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:122]
+INFO: [Common 17-14] Message 'Synth 8-324' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'lcd_display' (3#1) [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'lcd_driver' [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_driver.v:23]
+	Parameter H_SYNC_4342 bound to: 11'b00000101001 
+	Parameter H_BACK_4342 bound to: 11'b00000000010 
+	Parameter H_DISP_4342 bound to: 11'b00111100000 
+	Parameter H_FRONT_4342 bound to: 11'b00000000010 
+	Parameter H_TOTAL_4342 bound to: 11'b01000001101 
+	Parameter V_SYNC_4342 bound to: 11'b00000001010 
+	Parameter V_BACK_4342 bound to: 11'b00000000010 
+	Parameter V_DISP_4342 bound to: 11'b00100010000 
+	Parameter V_FRONT_4342 bound to: 11'b00000000010 
+	Parameter V_TOTAL_4342 bound to: 11'b00100011110 
+	Parameter H_SYNC_7084 bound to: 11'b00010000000 
+	Parameter H_BACK_7084 bound to: 11'b00001011000 
+	Parameter H_DISP_7084 bound to: 11'b01100100000 
+	Parameter H_FRONT_7084 bound to: 11'b00000101000 
+	Parameter H_TOTAL_7084 bound to: 11'b10000100000 
+	Parameter V_SYNC_7084 bound to: 11'b00000000010 
+	Parameter V_BACK_7084 bound to: 11'b00000100001 
+	Parameter V_DISP_7084 bound to: 11'b00111100000 
+	Parameter V_FRONT_7084 bound to: 11'b00000001010 
+	Parameter V_TOTAL_7084 bound to: 11'b01000001101 
+	Parameter H_SYNC_7016 bound to: 11'b00000010100 
+	Parameter H_BACK_7016 bound to: 11'b00010001100 
+	Parameter H_DISP_7016 bound to: 11'b10000000000 
+	Parameter H_FRONT_7016 bound to: 11'b00010100000 
+	Parameter H_TOTAL_7016 bound to: 11'b10101000000 
+	Parameter V_SYNC_7016 bound to: 11'b00000000011 
+	Parameter V_BACK_7016 bound to: 11'b00000010100 
+	Parameter V_DISP_7016 bound to: 11'b01001011000 
+	Parameter V_FRONT_7016 bound to: 11'b00000001100 
+	Parameter V_TOTAL_7016 bound to: 11'b01001111011 
+	Parameter H_SYNC_1018 bound to: 11'b00000001010 
+	Parameter H_BACK_1018 bound to: 11'b00001010000 
+	Parameter H_DISP_1018 bound to: 11'b10100000000 
+	Parameter H_FRONT_1018 bound to: 11'b00001000110 
+	Parameter H_TOTAL_1018 bound to: 11'b10110100000 
+	Parameter V_SYNC_1018 bound to: 11'b00000000011 
+	Parameter V_BACK_1018 bound to: 11'b00000001010 
+	Parameter V_DISP_1018 bound to: 11'b01100100000 
+	Parameter V_FRONT_1018 bound to: 11'b00000001010 
+	Parameter V_TOTAL_1018 bound to: 11'b01100110111 
+	Parameter H_SYNC_4384 bound to: 11'b00010000000 
+	Parameter H_BACK_4384 bound to: 11'b00001011000 
+	Parameter H_DISP_4384 bound to: 11'b01100100000 
+	Parameter H_FRONT_4384 bound to: 11'b00000101000 
+	Parameter H_TOTAL_4384 bound to: 11'b10000100000 
+	Parameter V_SYNC_4384 bound to: 11'b00000000010 
+	Parameter V_BACK_4384 bound to: 11'b00000100001 
+	Parameter V_DISP_4384 bound to: 11'b00111100000 
+	Parameter V_FRONT_4384 bound to: 11'b00000001010 
+	Parameter V_TOTAL_4384 bound to: 11'b01000001101 
+INFO: [Synth 8-6155] done synthesizing module 'lcd_driver' (4#1) [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_driver.v:23]
+WARNING: [Synth 8-7071] port 'data_req' of module 'lcd_driver' is unconnected for instance 'u_lcd_driver' [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_rgb_char.v:105]
+WARNING: [Synth 8-7023] instance 'u_lcd_driver' of module 'lcd_driver' has 16 connections declared, but only 15 given [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_rgb_char.v:105]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/19_uart_loopback/rtl/uart_rx_p.v:1]
+	Parameter CLK_FREQ bound to: 25000000 - type: integer 
+	Parameter UART_BPS bound to: 115200 - type: integer 
+	Parameter BAUD_CNT_MAX bound to: 217 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (5#1) [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/19_uart_loopback/rtl/uart_rx_p.v:1]
+INFO: [Synth 8-6157] synthesizing module 'snake_speed' [E:/FPGA/Project/handwritten_digit_recognition/handwritten-digits-recognition-hls-main-bilibili/sparkroad_project-master/Snake_ZYNQ7000_My/prj/gluttonous_snake.srcs/sources_1/new/snake_speed.v:1]
+	Parameter DIV_CNT bound to: 7500000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'snake_speed' (6#1) [E:/FPGA/Project/handwritten_digit_recognition/handwritten-digits-recognition-hls-main-bilibili/sparkroad_project-master/Snake_ZYNQ7000_My/prj/gluttonous_snake.srcs/sources_1/new/snake_speed.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_control' [E:/FPGA/Project/handwritten_digit_recognition/handwritten-digits-recognition-hls-main-bilibili/sparkroad_project-master/Snake_ZYNQ7000_My/prj/gluttonous_snake.srcs/sources_1/new/uart_control.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'uart_control' (7#1) [E:/FPGA/Project/handwritten_digit_recognition/handwritten-digits-recognition-hls-main-bilibili/sparkroad_project-master/Snake_ZYNQ7000_My/prj/gluttonous_snake.srcs/sources_1/new/uart_control.v:1]
+INFO: [Synth 8-6157] synthesizing module 'food' [E:/FPGA/Project/handwritten_digit_recognition/handwritten-digits-recognition-hls-main-bilibili/sparkroad_project-master/Snake_ZYNQ7000_My/prj/gluttonous_snake.srcs/sources_1/new/food.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'food' (8#1) [E:/FPGA/Project/handwritten_digit_recognition/handwritten-digits-recognition-hls-main-bilibili/sparkroad_project-master/Snake_ZYNQ7000_My/prj/gluttonous_snake.srcs/sources_1/new/food.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'lcd_rgb_char' (9#1) [E:/FPGA/ZYNQ_7010_FPGA/ZYNQ_7010_FPGA/22_lcd_rgb_char/rtl/lcd_rgb_char.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1300.160 ; gain = 161.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1300.160 ; gain = 161.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1300.160 ; gain = 161.672
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1300.160 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/FPGA/Project/handwritten_digit_recognition/handwritten-digits-recognition-hls-main-bilibili/sparkroad_project-master/Snake_ZYNQ7000_My/prj/gluttonous_snake.srcs/constrs_1/new/lcd_rgb_char.xdc]
+Finished Parsing XDC File [E:/FPGA/Project/handwritten_digit_recognition/handwritten-digits-recognition-hls-main-bilibili/sparkroad_project-master/Snake_ZYNQ7000_My/prj/gluttonous_snake.srcs/constrs_1/new/lcd_rgb_char.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/FPGA/Project/handwritten_digit_recognition/handwritten-digits-recognition-hls-main-bilibili/sparkroad_project-master/Snake_ZYNQ7000_My/prj/gluttonous_snake.srcs/constrs_1/new/lcd_rgb_char.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lcd_rgb_char_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lcd_rgb_char_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1416.160 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1416.160 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1416.160 ; gain = 277.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1416.160 ; gain = 277.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1416.160 ; gain = 277.672
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg' in module 'lcd_display'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            START_DIRECT |                              000 |                         00000000
+            RIGHT_DIRECT |                              001 |                         00001000
+             DOWN_DIRECT |                              010 |                         00000010
+             LEFT_DIRECT |                              011 |                         00000100
+               UP_DIRECT |                              100 |                         00000001
+                 HITWALL |                              101 |                         00010000
+                 HITBODY |                              110 |                         00100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_state_reg' using encoding 'sequential' in module 'lcd_display'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1416.160 ; gain = 277.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   23 Bit       Adders := 1     
+	   3 Input   12 Bit       Adders := 44    
+	   4 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 97    
+	   3 Input   11 Bit       Adders := 2     
+	   4 Input   11 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               11 Bit    Registers := 49    
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 41    
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 40    
+	   6 Input   24 Bit        Muxes := 2     
+	   5 Input   24 Bit        Muxes := 3     
+	  25 Input   24 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 1     
+	   6 Input   15 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 9     
+	   4 Input   11 Bit        Muxes := 2     
+	   4 Input   10 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 6     
+	   4 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 1     
+	 205 Input    3 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 8     
+	   6 Input    1 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 34    
+	   7 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1416.160 ; gain = 277.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1416.160 ; gain = 277.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1416.160 ; gain = 277.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1416.160 ; gain = 277.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1416.160 ; gain = 277.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1416.160 ; gain = 277.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1416.160 ; gain = 277.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1416.160 ; gain = 277.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1416.160 ; gain = 277.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1416.160 ; gain = 277.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   280|
+|3     |LUT1   |    21|
+|4     |LUT2   |   250|
+|5     |LUT3   |   201|
+|6     |LUT4   |   323|
+|7     |LUT5   |   344|
+|8     |LUT6   |   689|
+|9     |FDCE   |   624|
+|10    |FDPE   |    24|
+|11    |FDRE   |    10|
+|12    |IBUF   |     3|
+|13    |IOBUF  |     3|
+|14    |OBUF   |     6|
+|15    |OBUFT  |    21|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1416.160 ; gain = 277.672
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1416.160 ; gain = 161.672
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1416.160 ; gain = 277.672
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1421.730 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 283 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1424.715 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1424.715 ; gain = 286.227
+INFO: [Common 17-1381] The checkpoint 'E:/FPGA/Project/handwritten_digit_recognition/handwritten-digits-recognition-hls-main-bilibili/sparkroad_project-master/Snake_ZYNQ7000_My/prj/gluttonous_snake.runs/synth_1/lcd_rgb_char.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lcd_rgb_char_utilization_synth.rpt -pb lcd_rgb_char_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 12 12:00:29 2023...
